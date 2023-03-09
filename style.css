@@ -1,0 +1,89 @@
+*{
+margin: 0;
+padding: 0;
+
+}
+body{
+    background-image: url(./img/kabanas2.jpg);
+}
+
+
+.slider {
+    display: block;
+    height: 293px;
+    width: 600px;
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
+}
+
+.slider li {
+    list-style: none;
+    position: absolute;
+}
+
+.slider img {
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    vertical-align: top;
+}
+.slider input {
+    display: none;}
+    .slider label {
+        background-color: rgb(202, 11, 11);
+        bottom: 10px;
+        cursor: pointer;
+        display: block;
+        height: 10px;
+        position: absolute;
+        width: 10px;
+        z-index: 10;
+    }
+    
+    .slider li:nth-child(1) label {
+        left: 10px;
+    }
+    
+    .slider li:nth-child(2) label {
+        left: 20px;
+    }
+    
+    .slider li:nth-child(3) label {
+        left: 40px;}
+        .slider li:nth-child(4) label {
+            left: 60px;}
+            .slider li:nth-child(5) label {
+                left: 80px;}
+                .slider li:nth-child(6) label {
+                    left: 100px;}
+                    
+                        .slider li:nth-child(8) label {
+                            left: 140px;}
+                            .slider li:nth-child(9) label {
+                                left: 160px;}
+                                .slider li:nth-child(10) label {
+                                    left: 180px;}
+                                    .slider li:nth-child(11) label {
+                                        left: 200px;}
+                                        .slider li:nth-child(12) label {
+                                            left: 220px;}
+                                            .slider li:nth-child(13) label {
+                                                left: 240px;}
+            .slider img {
+            opacity: 0;
+            visibility: hidden;
+        }
+        
+        .slider li input:checked ~ img {
+            opacity: 1;
+            visibility: visible;
+            z-index: 10;
+        }
+        .endereco{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight:700;
+            font-style: oblique;
+            font-weight: bold;
+        text-align: center;
+        }
